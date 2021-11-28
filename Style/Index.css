@@ -1,13 +1,37 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Cinza: #141414;
+    --Gotham: 'Gotham Light', sans-serif;
 }
 
 body {
-    background-color: #141414;
+    background-color: var(--Cinza);
+}
+
+header {
+    display: inline-flex;
 }
 
 header img {
-    width: 100px;
+    width: 150px;
     padding: 20px 0px 0px 50px;
+}
+header li {
+    list-style: none;
+    display: inline-flex;
+    padding: 30px 10px 0px 20px;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--Gotham);
+    font-size: 15px;
 }
