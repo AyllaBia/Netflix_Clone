@@ -1,19 +1,24 @@
+/* Importando a fonte */
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
+/* Resetando o documento */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/* Declarando váriavel */
 :root {
     --Cinza: #141414;
     --Gotham: 'Gotham Light', sans-serif;
 }
 
+/* Elementos base */
 body {
     background-color: var(--Cinza);
     font-family: var(--Gotham);
+    color: #ffffff;
 }
 
 header img#logo {
@@ -42,3 +47,5 @@ header nav a {
 header nav a:hover {
     color: #aaa;
 }
+
+/* Filme principal */
