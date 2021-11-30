@@ -21,6 +21,10 @@ body {
     color: #ffffff;
 }
 
+header {
+    padding-bottom: 300px;
+}
+
 header img#logo {
     width: 150px;
     padding: 20px 0px 0px 50px;
@@ -30,6 +34,7 @@ header div.container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 header nav {
@@ -40,7 +45,6 @@ header nav {
 header nav a {
     color: #ffffff;
     text-decoration: none;
-    font-family: var(--Gotham);
     margin-right: 10px;
 }
 
@@ -49,3 +53,22 @@ header nav a:hover {
 }
 
 /* Filme principal */
+.filmePrincipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('../Images/fundoHouseOfCards.jpg');
+
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filmePrincipal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 80px;
+}
