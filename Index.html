@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/Index.css">
     <link rel="icon" href="Images/logoN.png">
+    <script src="https://kit.fontawesome.com/9cd710af77.js" crossorigin="anonymous"></script>
     <title>Início - Netflix</title>
 </head>
 
@@ -14,9 +15,9 @@
         <div class="filmePrincipal">
             <header>
                 <div class="container">
-                    <img id="logo" src="Images/logoNetflix.png" alt="Logo Netflix no canto superior esquerdo">
+                   <a href="Index.html"> <img id="logo" src="Images/logoNetflix.png" alt="Logo Netflix no canto superior esquerdo"></a>
                     <nav>
-                        4<a href="Index.html">Início</a>
+                        <a href="Index.html">Início</a>
                         <a href="Series.html">Séries</a>
                         <a href="Filmes.html">Filmes</a>
                         <a href="Bombando.html">Bombando</a>
@@ -30,11 +31,13 @@
                 <p class="descricao">O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
                 
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" id="btnAssistir">
+                        <i class="fas fa-play"></i>
                         Assistir Agora
                     </button>
         
-                    <Button role="button" class="botao">
+                    <Button role="button" id="btnMaisInformacoes">
+                        <i class="fas fa-info-circle"></i>
                         Mais Informações
                     </Button>
                 </div>
