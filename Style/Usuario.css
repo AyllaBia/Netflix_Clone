@@ -1,31 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* Importando as fontes */
+@import url('http://fonts.cdnfonts.com/css/gotham');
 
+/* Resetando o documento */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #141414;
+/* Declarando váriavel */
+:root {
+    --Cinza: #141414;
+    --Gotham: 'Gotham Light', sans-serif;
 }
 
-header img {
-    width: 100px;
-    padding: 20px 0px 0px 40px;
+/* Elementos base */
+body {
+    
+    background-color: var(--Cinza);
+    font-family: var(--Gotham);
+    color: #ffffff;
+    overflow-x: hidden; overflow-y: scroll;
+}
+
+header {
+    padding: 20px 0px 0px 60px;
+}
+
+header img{
+    width: 150px;
+}
+
+/* Usuários*/
+div.container {
+    padding-top: 150px;
+}
+
+div.container h1 {
+    font-family: var(--Gotham);
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 div#usuarios {
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: 50px;
+    display: flex;
 }
 
 div#usuarios li {
     list-style: none;
+}
+
+div#usuarios li img {
     width: 200px;
-    align-items: center;
-    display: inline-flex;
-    text-align: center;
+    border-radius: 5px;
+    margin-right: 40px;
 }
