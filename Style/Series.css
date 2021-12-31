@@ -1,0 +1,175 @@
+/* Importando as fontes */
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+/* Resetando o documento */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Declarando váriavel */
+:root {
+    --Cinza: #141414;
+    --Gotham: 'Gotham Light', sans-serif;
+}
+
+/* Elementos base */
+body {
+    
+    background-color: var(--Cinza);
+    font-family: var(--Gotham);
+    color: #ffffff;
+    overflow-x: hidden; overflow-y: scroll;
+}
+
+header {
+    padding-bottom: 15%;
+    width: 100%;
+}
+
+header img#logo {
+    width: 150px;
+    padding-top: 20px;
+}
+
+header div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #aaa;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    margin-left: 110vh;
+}
+
+header li {
+    list-style: none;
+    cursor: pointer;
+}
+
+header a#atual {
+    font-weight: bolder;
+}
+
+header li img {
+    height: 30px;
+    margin-left: 15px;
+}
+
+/* Filme principal */
+div.seriePrincipal {
+    font-size: 16px;
+    background: linear-gradient(to bottom, transparent 0%, var(--Cinza) 100%), url('../Images/Catalogo/Series/fundo.jpg');
+    
+
+    height: 100vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 60px;
+}
+
+.seriePrincipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 40%;
+    text-align: justify;
+}
+
+.seriePrincipal .titulo {
+    margin-top: 30px;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botoes {
+    padding-bottom: 8%;
+}
+
+#btnAssistir {
+    background-color: #ffffff;
+    padding: 20px 25px 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btnAssistir:hover {
+    background-color: #ffffffcc;
+    cursor: pointer;
+    transition: .1s;
+}
+
+ i {
+    padding: 0px 10px 0px 25px;
+    
+}
+
+#btnMaisInformacoes {
+    background-color: #54565A;
+    opacity: 100%;
+    color: #ffffff;
+    padding: 20px 35px 20px 10px;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btnMaisInformacoes:hover {
+    opacity: 90%;
+    cursor: pointer;
+    transition: .1s;
+}
+
+div.catalogo {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+div.catalogo ul {
+    display: flex;
+}
+
+div.catalogo li {
+    list-style: none;
+    margin: 10px 5px 10px 5px;
+}
+
+div.catalogo img {
+    width: 300px;
+    transition: 1s;
+}
+
+div.catalogo img:hover {
+    transition: 1s;
+    transition-delay: .5s;
+    width: 500px;
+    cursor: pointer;
+}
